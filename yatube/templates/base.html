@@ -1,0 +1,18 @@
+<!-- templates/base.html -->
+<!DOCTYPE html> 
+<html lang="ru">          
+  <head>
+    {% block title %}
+      Прописать бы по умолчанию параметры head
+    {% endblock %}       
+  </head>
+  <body>
+      {% include 'includes/header.html' %}
+    <main>
+      {% block content %}
+        Контент не подвезли
+      {% endblock %}
+    </main>
+      {% include 'includes/footer.html' %} 
+    </body>
+</html> 
