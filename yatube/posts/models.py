@@ -25,12 +25,8 @@ class Post(models.Model):
     )
     group = models.ForeignKey(
         Group,
-        blank = True,
-        null = True,
-        on_delete = models.CASCADE,
-        related_name = 'posts',
+        blank=True,
+        null=True,
+        on_delete=models.CASCADE,
+        related_name='posts',
     )
-
-
-
-
